@@ -10,13 +10,16 @@
     "build": "rimraf dist && tsc",
     "add-build": "git add dist",
     "prepare": "husky",
-     "precommit": "npm run build && npm run add-build"
+    "precommit": "npm run build && npm run add-build"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.2",
+    "@types/morgan": "^1.9.9",
     "husky": "^9.1.7",
     "nodemon": "^3.1.10",
     "rimraf": "^6.0.1",
